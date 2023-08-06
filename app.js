@@ -2,7 +2,10 @@ const http = require('http');
 
 
 const server = http.createServer((req, res) => {
-    console.log(req.url);
+    const url = req.url;
+    if (url === '/') {
+        
+    }
 
     // type of response we are sending back example ('text/plain', 'text/html', 'application/json' ... etc)
     // https://developer.mozilla.org/en-US/docs/Glossary/Response_header
